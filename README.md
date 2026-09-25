@@ -59,6 +59,23 @@ The listbox and options must live in the control's own shadow root or an
 roots; the hook warns in the console when that happens. Requires ARIA element
 reflection: Chrome 135, Firefox 136, Safari 16.4.
 
+### `useAnnouncer`
+
+Debounces a message for a polite live region, so a screen reader hears the
+result of typing once instead of on every keystroke. Render the region inside
+the component: an announcer at page level goes silent while a modal dialog
+makes the rest of the page inert.
+
+```ts
+const announcement = useAnnouncer(
+	opened ? t('{{count}} results', { count }) : '',
+);
+
+html`<span class="visually-hidden" aria-live="polite">${announcement}</span>`;
+```
+
+An empty message clears the region at once. The delay defaults to 500 ms.
+
 ## Development
 
 ```sh
