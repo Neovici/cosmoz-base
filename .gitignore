@@ -4,3 +4,5 @@ dist/
 .eslintcache
 .DS_Store
 test-results/
+.vitest-attachments/
+__screenshots__/
