@@ -1,6 +1,6 @@
 {
 	"name": "@neovici/cosmoz-base",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"type": "module",
 	"description": "Headless behaviour hooks for cosmoz web components, modelled on Base UI",
 	"keywords": [
