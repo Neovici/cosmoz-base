@@ -6,3 +6,8 @@ dist/
 test-results/
 .vitest-attachments/
 __screenshots__/
+
+# Codecov uploader artifacts
+codecov
+codecov.SHA256SUM
+codecov.SHA256SUM.sig
